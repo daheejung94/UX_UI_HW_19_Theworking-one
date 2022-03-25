@@ -1,0 +1,118 @@
+body 
+{
+  height: 100vh;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 50px;
+  background-image: linear-gradient(#F8A4A6 500px, white);
+  object-fit: fill;
+}
+
+#content 
+{
+  background-color: #F8A4A6;
+  background-image: none;
+  width: 100vw;
+  height:500px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 50pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content header
+{
+  background-color: #c4696a;
+  width: 100vw;
+  height:  25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content #resume 
+{
+  height: 15%;
+  width: 15vw;
+  background-color: white;
+  border-radius: 30px;
+  color: #c4696a;
+  border: 5px solid;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#content #resume:hover
+{
+  background-color: black;
+  border-color: white;
+}
+
+#modal 
+{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content 
+{
+  height: 20vh;
+  width: 50vw;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -5%); 
+  background-color: #fefefe;
+  border: 5px solid #888;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.close 
+{
+  color: black;
+  float: right;
+  font-size: 50px;
+  height: 5vw;
+  width: 5vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close:hover,
+.close:focus 
+{
+  color: #c4696a;
+}
+
+#modal .modal-content p
+{
+height: 20vh;
+padding-left: 2.5vw;
+padding: auto;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
